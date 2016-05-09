@@ -29,3 +29,23 @@ void Bezpalko()
   delay(1500);
 }
 
+void LED_Dmitrenko ( )
+{
+  digitalWrite(ledPin, HIGH);
+  delay(1500);
+  digitalWrite(ledPin, LOW);
+  
+  delay(500);
+  
+  digitalWrite(ledPin, HIGH);
+  delay(500);
+  digitalWrite(ledPin, LOW);
+  
+  delay(500);
+  
+  digitalWrite(ledPin, HIGH);
+  delay(500);
+  digitalWrite(ledPin, LOW);
+  
+  delay(1500);
+}
