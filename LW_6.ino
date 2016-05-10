@@ -1,65 +1,75 @@
-int ledPin =13;
+#define LED_B 13
+#define LED_D 12
+#define LED_G 11
 void setup()
 {
-  pinMode(ledPin,OUTPUT);
+  pinMode(LED_B,OUTPUT);
+  pinMode(LED_D,OUTPUT);
+  pinMode(LED_G,OUTPUT);
 }
 void loop()
 {
+  Bezpalko();
+  delay(2000);
+  LED_Dmitrenko ( );
+  delay(2000);
+  LED_Golovko ( );
+  delay(2000);
 }
 void Bezpalko()
 {
-  digitalWrite(ledPin,HIGH);
+  digitalWrite(LED_B,HIGH);
   delay(1500);
-  digitalWrite(ledPin,LOW);
+  digitalWrite(LED_B,LOW);
   
   delay(500);
-   digitalWrite(ledPin,HIGH);
+   digitalWrite(LED_B,HIGH);
   delay(500);
-  digitalWrite(ledPin,LOW);
+  digitalWrite(LED_B,LOW);
   
   delay(500);
-   digitalWrite(ledPin,HIGH);
+   digitalWrite(LED_B,HIGH);
   delay(500);
-  digitalWrite(ledPin,LOW);
+  digitalWrite(LED_B,LOW);
   delay(500);
   
-  digitalWrite(ledPin,HIGH);
+  digitalWrite(LED_B,HIGH);
   delay(500);
-  digitalWrite(ledPin,LOW);
+  digitalWrite(LED_B,LOW);
   delay(1500);
 }
 
 void LED_Dmitrenko ( )
 {
-  digitalWrite(ledPin, HIGH);
+  digitalWrite(LED_D, HIGH);
   delay(1500);
-  digitalWrite(ledPin, LOW);
+  digitalWrite(LED_D, LOW);
   
   delay(500);
   
-  digitalWrite(ledPin, HIGH);
+  digitalWrite(LED_D, HIGH);
   delay(500);
-  digitalWrite(ledPin, LOW);
+  digitalWrite(LED_D, LOW);
   
   delay(500);
   
-  digitalWrite(ledPin, HIGH);
+  digitalWrite(LED_D, HIGH);
   delay(500);
-  digitalWrite(ledPin, LOW);
+  digitalWrite(LED_D, LOW);
   
   delay(1500);
 }
 void LED_Golovko ( )  {
-  digitalWrite(ledPin, HIGH);
+  digitalWrite(LED_G, HIGH);
   delay (1500);
-  digitalWrite(ledPin, LOW);
+  digitalWrite(LED_G, LOW);
   delay (500);
-  digitalWrite(ledPin, HIGH);
+  digitalWrite(LED_G, HIGH);
   delay (1500);
-  digitalWrite(ledPin, LOW);
+  digitalWrite(LED_G, LOW);
   delay (500);
-  digitalWrite(ledPin, HIGH);
+  digitalWrite(LED_G, HIGH);
   delay (500);
-  digitalWrite(ledPin, LOW);
+  digitalWrite(LED_G, LOW);
   delay (1500);
 }
