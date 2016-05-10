@@ -10,11 +10,8 @@ void setup()
 void loop()
 {
   Bezpalko();
-  delay(2000);
   LED_Dmitrenko ( );
-  delay(2000);
   LED_Golovko ( );
-  delay(2000);
 }
 void Bezpalko()
 {
